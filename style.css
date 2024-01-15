@@ -1,0 +1,56 @@
+body {
+  background-color: #042940;
+}
+
+.container-small {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #D6D58E;
+}
+
+.form-label {
+  color: #D6D58E;
+}
+
+.form-control {
+  color: #fff;
+  background-color: #005C53;
+  border: 1px solid #005C53;
+  max-width: 400px;
+}
+
+.form-control:focus {
+  color: #fff;
+  background-color: #005C53;
+  border: 1px solid #D6D58E;
+  outline: auto;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #c2c2c2;
+}
+
+.list-group {
+  max-width: 400px;
+}
+
+.list-group-item {
+  background-color: #063857;
+  
+}
+
+.list-group-text {
+  font-size: 1.125rem;
+  color: #D6D58E;
+}
+
+.list-group-icon {
+  font-size: 18px;
+  color: #D6D58E;
+  cursor: pointer;
+  padding: 6px;
+}
