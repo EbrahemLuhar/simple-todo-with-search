@@ -13,13 +13,13 @@
 
     <header class="my-5">
       <h1 class="text-center">Todo List</h1>
-      <form class="search">
+      <form class="search js-search-form">
         <label for="searchInput" class="form-label">Search:</label>
-        <input type="text" class="form-control" id="searchInput" placeholder="e.g. Finish reading" />
+        <input type="text" class="form-control js-search-input" id="searchInput" placeholder="e.g. Finish reading" />
       </form>
     </header>
 
-    <ul class="list-group mb-4 pb-2">
+    <ul class="list-group mb-4 pb-2 js-list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <span class="list-group-text">Tidy the garden</span>
         <i class="list-group-icon far fa-trash-alt delete"></i>
@@ -42,9 +42,9 @@
       </li>
     </ul>
     
-    <form action="addItem">
+    <form class="addItem js-add-form">
       <label for="addItemInput" class="form-label">Add a new task:</label>
-      <input type="text" class="form-control" id="addItemInput" />
+      <input type="text" class="form-control js-add-input" id="addItemInput" />
     </form>
 
   </section>
