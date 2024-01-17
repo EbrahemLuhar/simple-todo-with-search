@@ -35,3 +35,19 @@ listParent.addEventListener('click', (e) => {
     e.target.parentElement.remove();
   }
 })
+
+/**
+ * Search task
+ */
+searchInput.addEventListener('keyup', (e) => {
+  const searchText = e.target.value.toLowerCase();
+  console.log(searchText);
+  
+  listParent.querySelectorAll('span').forEach(item => {
+    if (!item.textContent.toLocaleLowerCase().includes(searchText)) {
+      item.parentNode.classList.add('d-none');
+    } else {
+      item.parentNode.classList.remove('d-none');
+    }
+  });
+});
