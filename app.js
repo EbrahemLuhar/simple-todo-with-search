@@ -20,7 +20,10 @@ function addNewTask(newItem) {
 addItemForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const newItem = addItemInput.value.trim();
-  addNewTask(newItem);
+  // Check if empty
+  if (newItem.length) {
+    addNewTask(newItem);
+  }
 });
 
 /**
